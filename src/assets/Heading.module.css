@@ -1,0 +1,9 @@
+/* Cada classe pode ser acessada individualmente como atributo da instância desse arquivo */
+.heading {
+    background-color: brown;
+    color: black;
+}
+
+.cyan {
+    color: cyan;
+}
