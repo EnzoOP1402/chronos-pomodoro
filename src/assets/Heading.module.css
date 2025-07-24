@@ -1,9 +1,8 @@
-/* Cada classe pode ser acessada individualmente como atributo da instância desse arquivo */
-/* .heading {
-    background-color: brown;
-    color: black;
+/* Cada estilo de classe pode ser acessada individualmente como atributo da instância desse arquivo (ex.: style.heading)*/
+.heading {
+    margin: 3.2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
 }
-
-.cyan {
-    color: cyan;
-} */
