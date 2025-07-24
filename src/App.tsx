@@ -1,3 +1,6 @@
+import './styles/global.css'
+import './styles/theme.css'
+
 export function App() {
     // Como em react somente um elemento pode ser retornado, sempre devemos "envelopar" o código que estamos retornando em um elemento, seja retornando uma div que contenha todos os trechos necessários, ou utilizando o React Fragment, que consiste em uma tag vazia que engloba tudo que será retornado em HtML
     return (
