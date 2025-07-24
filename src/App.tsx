@@ -6,9 +6,7 @@ export function App() {
     // Como em react somente um elemento pode ser retornado, sempre devemos "envelopar" o código que estamos retornando em um elemento, seja retornando uma div que contenha todos os trechos necessários, ou utilizando o React Fragment, que consiste em uma tag vazia que engloba tudo que será retornado em HtML
     return (
         <>
-            <Heading>Olá mundo 1</Heading>
-            <Heading>Olá mundo 2</Heading>
-            <Heading>Olá mundo 3</Heading>
+            <Heading>Olá, mundo!</Heading>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsum eum et, optio nostrum ipsam cumque! Nam libero tempora sunt quia aut eos necessitatibus impedit, eveniet cupiditate expedita accusamus nemo neque magnam alias itaque rerum, praesentium earum doloremque. Veritatis veniam minus pariatur accusantium quia impedit exercitationem quisquam ipsum dolorum, doloribus est animi quibusdam nisi dolor, maxime ea libero blanditiis nam repudiandae provident soluta sapiente temporibus, enim assumenda! Quas, saepe obcaecati dignissimos blanditiis, tempore eaque similique libero, vero facilis magni aut voluptate mollitia hic recusandae natus itaque assumenda harum pariatur eligendi porro maiores deserunt reprehenderit! Minima illum tempora nemo beatae ab.</p>
         </>
     )
