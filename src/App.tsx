@@ -1,3 +1,5 @@
+import { Container } from './components/Container'
+import { Heading } from './components/Heading'
 import './styles/global.css'
 import './styles/theme.css'
 
@@ -5,29 +7,18 @@ export function App() {
     // Como em react somente um elemento pode ser retornado, sempre devemos "envelopar" o código que estamos retornando em um elemento, seja retornando uma div que contenha todos os trechos necessários, ou utilizando o React Fragment, que consiste em uma tag vazia que engloba tudo que será retornado em HtML
     return (
         <>
-            <div className="container">
-                <div className="content">
-                    <section>LOGO</section>
-                </div>
-            </div>
-
-            <div className="container">
-                <div className="content">
-                    <section>MENU</section>
-                </div>
-            </div>
-
-            <div className="container">
-                <div className="content">
-                    <section>FORM</section>
-                </div>
-            </div>
-            
-            <div className="container">
-                <div className="content">
-                    <section>FOOTER</section>
-                </div>
-            </div>
+            <Container>
+                <Heading>LOGO</Heading>
+            </Container>
+            <Container>
+                <Heading>MENU</Heading>
+            </Container>
+            <Container>
+                <Heading>FORM</Heading>
+            </Container>
+            <Container>
+                <Heading>FOOTER</Heading>
+            </Container>
         </>
     )
 }
