@@ -1,4 +1,4 @@
-import styles from './Heading.module.css'
+import styles from './styles.module.css'
 
 // Definindo um tipo para atribuir à propriedade -> padroniza, é uma boa prática de programação e garante que as propriedades desse elemento serão apenas do tipo string
 type HeadingProps = {
