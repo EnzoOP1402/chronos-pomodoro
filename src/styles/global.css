@@ -14,3 +14,18 @@ body {
     background-color: var(--gray-900);
     color: var(--text-default);
 }
+
+/* 
+.container-fluid{
+    max-width: auto; -> não possui margem e se extende pela página inteira
+}
+*/
+
+.container{
+    max-width: 98rem;
+    margin: 0 auto; /*Zera as margens superiores e distribui igualmente o valor das margens laterais -> centraliza*/
+}
+
+.content{
+    margin: 3.2rem;
+}
