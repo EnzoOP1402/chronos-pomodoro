@@ -10,6 +10,7 @@ import { Menu } from './components/Menu'
 
 import './styles/global.css'
 import './styles/theme.css'
+import { Footer } from './components/Footer'
 
 export function App() {
     // Como em react somente um elemento pode ser retornado, sempre devemos "envelopar" o código que estamos retornando em um elemento, seja retornando uma div que contenha todos os trechos necessários, ou utilizando o React Fragment, que consiste em uma tag vazia que engloba tudo que será retornado em HtML
@@ -42,13 +43,13 @@ export function App() {
 
                     <div className="formRow">
                         <DefaultButton icon={<PlayCircleIcon/>} color='green'/>
-                        <DefaultButton icon={<StopCircleIcon/>} color='red'/>
+                        {/* <DefaultButton icon={<StopCircleIcon/>} color='red'/> */}
                     </div>
                 </form>
             </Container>
 
             <Container>
-                <Heading>FOOTER</Heading>
+                <Footer/>
             </Container>
         </>
     )
