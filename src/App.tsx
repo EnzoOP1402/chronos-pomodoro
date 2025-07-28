@@ -11,11 +11,22 @@ import { Menu } from './components/Menu'
 import './styles/global.css'
 import './styles/theme.css'
 import { Footer } from './components/Footer'
+import { useState } from 'react'
 
 export function App() {
+    const [num, setNum] = useState(0);
+
+    function handleClick() {
+        setNum(prevState => prevState + 1)
+        console.log(num)
+    }
+
     // Como em react somente um elemento pode ser retornado, sempre devemos "envelopar" o código que estamos retornando em um elemento, seja retornando uma div que contenha todos os trechos necessários, ou utilizando o React Fragment, que consiste em uma tag vazia que engloba tudo que será retornado em HtML
     return (
         <>
+            <Heading>Número: {num}</Heading>
+            <button onClick={handleClick}>Aumenta</button>
+
             <Container>
                 <Logo/>
             </Container>
@@ -31,7 +42,7 @@ export function App() {
             <Container>
                 <form action="" className='form'>
                     <div className="formRow">
-                        <DefaultInput labelText='Task' id='input' type='text' placeholder='Digite algo'/>
+                        <DefaultInput labelText={num.toString()} id='input' type='text' placeholder='Digite algo'/>
                     </div>
                     <div className="formRow">
                         <p>Lorem ipsum dolor sit amet.</p>
