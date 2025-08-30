@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import type { TaskStateModel } from './models/TaskStatemodel';
+import type { TaskStateModel } from './models/TaskStateModel';
 import { Home } from './pages/Home'
 
 import './styles/global.css'
 import './styles/theme.css'
+import { TaskContextProvider } from './contexts/TaskContext';
+import { useState } from 'react';
 
-// Definindo uma variável do tipo TaskStateModel para inputar um objeto com os tipos já inicializados e, consequentemente, inicializar o useState
 const initialState: TaskStateModel = {
     tasks: [],
     secondsRemaining: 0,
@@ -20,11 +20,15 @@ const initialState: TaskStateModel = {
 }
 
 export function App() {
-    const [state, setState] = useState(initialState); // Através do initialState, o React interpreta que esse useState já é do tipo TaskStateModel
+
+    const [state, setState] = useState(initialState);
 
     return (
         <>
-            <Home state={state} setState={setState}/>
+        {/* O Provider é responsável por passar seu valor a TODOS OS COMPONENTES QUE ESTÃO DENTRO DELE, ou seja, tanto o Home quanto seus filhos receberão o outro: '321'*/}
+            <TaskContextProvider>
+                <Home/>
+            </TaskContextProvider>
         </>
     )
 }

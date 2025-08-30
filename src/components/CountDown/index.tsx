@@ -1,14 +1,14 @@
-import type { HomeProps } from '../../pages/Home'
+import { useContext } from 'react'
 import styles from './styles.module.css'
-// type CountDownProps = {
-//     formattedSecondsRemaining: string;
-// } -> Como usaremos as mesmas propriedades que a Home usa, ao invés de definirmos novas props, podemos reutilizar as HomeProps, bastando exportá-las na página onde é declarada
-// Outra alternativa é declarar propriedades específicas pro CountDown e somá-las com as da Home através do operador &
+import { TaskContext } from '../../contexts/TaskContext'
 
-export function CountDown({state}: HomeProps) {
+export function CountDown() {
+    const taskContent = useContext(TaskContext);
+    console.log(taskContent);
+
     return (
         <div className={styles.container}>
-            {state.formattedSecondsRemaining}
+            00:00
         </div>
     )
 }
